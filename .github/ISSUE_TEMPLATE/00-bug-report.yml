@@ -6,8 +6,10 @@ labels: ["bug"]
 body:
   - type: input
     id: bug-report-title
-    required: true
     description: "Bug report title"
+    validations:
+      required: true
+
   - type: checkboxes
     id: affected-systems
     attributes:
