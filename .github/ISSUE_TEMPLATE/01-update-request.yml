@@ -6,11 +6,11 @@ labels: ["update-request"]
 body:
   - type: markdown
     attributes:
-    value: |
-      An update request is one to update versions or implementations
-      to software stacks as necessary, but not a request for an specific
-      enhancement of software or deployment. Example is Cray Programming
-      Environment 24.03 promotion to default.
+      value: |
+        An update request is one to update versions or implementations
+        to software stacks as necessary, but not a request for an specific
+        enhancement of software or deployment. Example is Cray Programming
+        Environment 24.03 promotion to default.
       
   - type: checkboxes
     id: affected-systems
