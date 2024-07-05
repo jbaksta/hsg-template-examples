@@ -1,0 +1,36 @@
+---
+name: "Enhancement Request (RFE)"
+description: "Request that an enhancement on support systems or in the configuration system be performed."
+title: "[UpReq]: "
+labels: ["update-request"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        An enhancement request is one to alter the configuration or feature
+        set of an implemented configuration. Example might be to add additional
+        functionality to a node-health-check configuration to expand to slingshot
+        switches.
+      
+  - type: checkboxes
+    id: affected-systems
+    attributes:
+      label: "Which systems does the bug affect?"
+      description: "Select which systems the bug affects"
+      options:
+        - label: "Derecho (nwsc3)"
+        - label: "Gust (nwsc3)"
+        - label: "Destor (nwsc3-lustre)"
+        - label: "Gustor (nwsc3-lustre)"
+        - label: "Campaign Store"
+        - label: "Casper (dav)"
+        - label: "HSG Infrastructure"
+
+  - type: textarea
+    id: enhancement-details
+    attributes:
+      label: "Please describe the desired enhancement."
+      description: "Be as details as desired."
+      placeholder: "Describe the enhancement you want request."
+    validations:
+      requred: true
