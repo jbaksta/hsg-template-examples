@@ -1,6 +1,6 @@
 ---
-name: "Bug Report"
-description: "File a bug report"
+name: "Report Issue"
+description: "File an issue."
 #title: "[BUG]: "
 #labels: ["bug"]
 body:
@@ -35,9 +35,9 @@ body:
     id: full-description
     attributes:
       label: "Full Issue Details:"
-      description: "Please provide a full synopsis of the bug encountered."
+      description: "Please provide a full synopsis of the issue."
     validations:
-      retured: true
+      required: true
 
   - type: textarea
     id: alt-ideas
