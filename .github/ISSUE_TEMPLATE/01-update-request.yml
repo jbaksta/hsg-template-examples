@@ -25,15 +25,6 @@ body:
         - label: "Campaign Store"
         - label: "Casper (dav)"
         - label: "HSG Infrastructure"
-        
-  - type: input
-    id: update-title
-    attributes:
-      label: "Update Request Title"
-      description: "Update Request Title"
-      placeholder: "What do you want to upgrade?"
-    validations:
-      required: true
 
   - type: textarea
     id: update-details
