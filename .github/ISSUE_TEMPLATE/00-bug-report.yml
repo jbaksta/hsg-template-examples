@@ -4,9 +4,16 @@ description: "File a bug report"
 title: "[BUG]: "
 labels: ["bug"]
 body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for filling out a bug report.
+        
   - type: input
     id: bug-report-title
-    description: "Bug report title"
+    attributes:
+      label: "Bug Report Title"
+      description: "Bug report title"
     validations:
       required: true
 
@@ -23,3 +30,11 @@ body:
         - label: "Campaign Store"
         - label: "Casper (dav)"
         - label: "HSG Infrastructure"
+
+  - type: textarea
+    id: full-bug-description
+    attributes:
+      label: "Full Bug Details"
+      description: "Please provide a full synopsis of the bug encountered."
+    validations:
+      retured: true
