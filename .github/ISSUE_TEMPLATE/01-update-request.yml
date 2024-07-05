@@ -1,0 +1,45 @@
+---
+name: "Update Request"
+description: "Request that an update of the stack be performed."
+title: "[UpReq]: "
+labels: ["update-request"]
+body:
+  - type: markdown
+    attributes:
+    value: |
+      An update request is one to update versions or implementations
+      to software stacks as necessary, but not a request for an specific
+      enhancement of software or deployment. Example is Cray Programming
+      Environment 24.03 promotion to default.
+      
+  - type: checkboxes
+    id: affected-systems
+    attributes:
+      label: "Which systems does the bug affect?"
+      description: "Select which systems the bug affects"
+      options:
+        - label: "Derecho (nwsc3)"
+        - label: "Gust (nwsc3)"
+        - label: "Destor (nwsc3-lustre)"
+        - label: "Gustor (nwsc3-lustre)"
+        - label: "Campaign Store"
+        - label: "Casper (dav)"
+        - label: "HSG Infrastructure"
+        
+  - type: input
+    id: update-title
+    attributes:
+      label: "Update Request Title"
+      description: "Update Request Title"
+      placeholder: "What do you want to upgrade?"
+    validations:
+      required: true
+
+  - type: textarea
+    id: update-details
+    attributes:
+      label: "Please describe the desired update."
+      description: "Be as details as desired."
+      placeholder: "Describe the update you want request."
+    validations:
+      requred: true
