@@ -8,14 +8,6 @@ body:
     attributes:
       value: |
         Thanks for filling out a bug report.
-        
-  - type: input
-    id: bug-report-title
-    attributes:
-      label: "Bug Report Title"
-      description: "Bug report title"
-    validations:
-      required: true
 
   - type: checkboxes
     id: affected-systems
