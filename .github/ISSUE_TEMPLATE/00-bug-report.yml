@@ -1,14 +1,27 @@
 ---
 name: "Bug Report"
 description: "File a bug report"
-title: "[BUG]: "
-labels: ["bug"]
+#title: "[BUG]: "
+#labels: ["bug"]
 body:
   - type: markdown
     attributes:
       value: |
         Thanks for filling out a bug report.
 
+  - type: dropdown
+    id: issue-type
+    attributes:
+      label: "What kind of issue is this?"
+      description: "Select a issue type."
+      options:
+        - "Update Request"
+        - "Enhancement Request"
+        - "Bug Report"
+      default: 0
+    validations:
+      required: true
+      
   - type: checkboxes
     id: affected-systems
     attributes:
