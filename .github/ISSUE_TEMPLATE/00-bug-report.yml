@@ -4,11 +4,6 @@ description: "File a bug report"
 #title: "[BUG]: "
 #labels: ["bug"]
 body:
-  - type: markdown
-    attributes:
-      value: |
-        Thanks for filling out a bug report.
-
   - type: dropdown
     id: issue-type
     attributes:
@@ -37,9 +32,21 @@ body:
         - label: "HSG Infrastructure"
 
   - type: textarea
-    id: full-bug-description
+    id: full-description
     attributes:
-      label: "Full Bug Details"
+      label: "Full Issue Details:"
       description: "Please provide a full synopsis of the bug encountered."
     validations:
       retured: true
+
+  - type: textarea
+    id: alt-ideas
+    attributes:
+      label: "Alternatives considered:"
+      description: "Please make note of any alternative implementations or concepts."
+
+  - type: textarea
+    id: testing-ideas
+    attributes:
+      label: "Testing plans:"
+      description: "Please make note of your testing plans for this issue."
