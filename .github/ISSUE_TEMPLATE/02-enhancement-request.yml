@@ -1,8 +1,8 @@
 ---
 name: "Enhancement Request (RFE)"
 description: "Request that an enhancement on support systems or in the configuration system be performed."
-title: "[UpReq]: "
-labels: ["update-request"]
+title: "[RFE]: "
+labels: ["enhancement-request"]
 body:
   - type: markdown
     attributes:
